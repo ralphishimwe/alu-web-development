@@ -1,17 +1,55 @@
-body{
-  display: flex;
-  flex-direction: column;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-main{
-  display: flex;
-  flex-direction: row;
-  flex: auto;
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    gap: .6rem;
 }
-article{
-  flex: 2;
-  overflow-y: auto
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
-aside{
-  flex: 1;
-  overflow-y: auto;
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: .6rem;
+    text-align: center;
+    border: 1px solid #ff3;
+}
+
+aside {
+    flex: 1;
+    padding: .6rem;
+    border: 1px solid #ff3;
+}
+
+header,
+footer {
+    flex: none;
+    border: 1px solid #ff3;
+    padding: .6rem;
+}
+
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+li {
+    list-style: none;
+    margin-right: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
